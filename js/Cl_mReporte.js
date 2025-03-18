@@ -1,11 +1,11 @@
-export default class Cl_reporte {
+export default class Cl_mReporte {
     constructor() {
         this.acpersonas = 0;
         this.acmujeres = 0;
         this.achombres = 0;
       }
 
-      procesarpersonas(n) {
+      procesarPersonas(n) {
         this.acpersonas++;
 
         if (n.sexo == "M") {
@@ -17,15 +17,15 @@ export default class Cl_reporte {
         }
       }
 
-      cantidadpersonas() {
+      cantidadPersonas() {
         return this.acpersonas;
       }
 
-      cantidadmujeres() {
+      cantidadMujeres() {
         return this.acmujeres;
       }
 
-      cantidadhombres() {
+      cantidadHombres() {
         return this.achombres;
       }
     }

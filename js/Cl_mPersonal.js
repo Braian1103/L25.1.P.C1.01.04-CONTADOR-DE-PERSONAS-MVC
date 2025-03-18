@@ -1,5 +1,5 @@
-export default class Cl_personal {
-    constructor(nombre, sexo) {
+export default class Cl_mPersonal {
+    constructor({nombre, sexo}) {
         this.nombre = nombre;
         this.sexo = sexo;
     }
@@ -10,5 +10,13 @@ export default class Cl_personal {
 
     get nombre() {
         return this._nombre;
+    }
+
+    set sexo(s) {
+        this._sexo = s;
+    }
+
+    get sexo() {
+        return this._sexo;
     }
 }
